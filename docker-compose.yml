@@ -45,6 +45,16 @@ services:
       - ./query:/app
       - query_node_modules:/app/node_modules
     network_mode: host
+  moderation:
+    build:
+      context: ./moderation
+      target: dev
+    ports:
+      - 4003:4003
+    volumes:
+      - moderation_node_modules:/app/node_modules
+      - ./moderation:/app
+    network_mode: host
   event-bus:
     build:
       context: ./event-bus
@@ -62,3 +72,4 @@ volumes:
   posts_node_modules:
   query_node_modules:
   event-bus_node_modules:
+  moderation_node_modules:
