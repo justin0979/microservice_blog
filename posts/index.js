@@ -40,4 +40,8 @@ app.post("/events", (req, res) => {
   res.send({});
 });
 
-app.listen(4000, () => console.log("Posts listening on port 4000"));
+app.listen(4000, () =>
+  console.log(
+    "Posts listening on port 4000 from latest update on Docker Hub"
+  )
+);
