@@ -11,3 +11,7 @@ minikube start
 minikube addons enable ingress
 skaffold dev
 </code></pre>
+
+### Note
+
+After posting a Post or a Comment, the browser has to manually be refreshed since the lectures did not cover how to do that yet.
