@@ -16,13 +16,17 @@ build:
         manual:
           - src: "**/*.js"
             dest: .
+          - src: "**/*.jsx"
+            dest: .
+          - src: "**/*.scss"
+            dest: .
     - image: justin0979/blog-comments
       context: comments
       docker:
         dockerfile: Dockerfile
       sync:
         manual:
-          - src: "*.js"
+          - src: "**/*.js"
             dest: .
     - image: justin0979/blog-event-bus
       context: event-bus
@@ -30,7 +34,7 @@ build:
         dockerfile: Dockerfile
       sync:
         manual:
-          - src: "*.js"
+          - src: "**/*.js"
             dest: .
     - image: justin0979/blog-moderation
       context: moderation
@@ -38,7 +42,7 @@ build:
         dockerfile: Dockerfile
       sync:
         manual:
-          - src: "*.js"
+          - src: "**/*.js"
             dest: .
     - image: justin0979/blog-posts
       context: posts
@@ -46,7 +50,7 @@ build:
         dockerfile: Dockerfile
       sync:
         manual:
-          - src: "*.js"
+          - src: "**/*.js"
             dest: .
     - image: justin0979/blog-query
       context: query
@@ -54,5 +58,5 @@ build:
         dockerfile: Dockerfile
       sync:
         manual:
-          - src: "*.js"
+          - src: "**/*.js"
             dest: .

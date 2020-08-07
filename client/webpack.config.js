@@ -22,7 +22,7 @@ module.exports = {
     hot: true,
     historyApiFallback: true, // use for routing
     overlay: true,
-    //    public: "posts.com", // change devconfig if needed to whatever app is named (e.g. client:80), added with nginx use
+    public: "posts.com", // change devconfig if needed to whatever app is named (e.g. client:80), added with nginx use
     //proxy: [{ context: ["/auth/google", "/api"], target: "http://localhost:5000" }] <--- use if working with backend, paths are just examples.
   },
   resolve: {
