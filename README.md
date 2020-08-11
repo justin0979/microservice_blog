@@ -12,6 +12,8 @@ minikube addons enable ingress
 skaffold dev
 </code></pre>
 
+Without <pre><code>minikube addons enable ingress</code></pre>, you will not be able to access the site `posts.com` in the browser.
+
 ### Note
 
 After posting a Post or a Comment, the browser has to manually be refreshed since the lectures did not cover how to do that yet.
